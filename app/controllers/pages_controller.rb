@@ -15,6 +15,9 @@ class PagesController < ApplicationController
   end
 
   def square_root_results
+    @user_num = params.fetch("user_number").to_f
+    @sqr_root = @user_num**(0.5)
+
     render({ :template => "page_templates/square_root_results"})
   end
 end
