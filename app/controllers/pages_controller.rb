@@ -20,4 +20,10 @@ class PagesController < ApplicationController
 
     render({ :template => "page_templates/square_root_results"})
   end
+
+  def payment
+  end
+
+  def payment_results
+  end
 end
