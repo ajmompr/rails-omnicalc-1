@@ -50,6 +50,11 @@ class PagesController < ApplicationController
   end
   
   def random_results
+    @min = params.fetch("user_min").to_f
+    @max = params.fetch("user_max").to_f
+
+    @rand_num = rand(@min..@max)
+
     render({ :template => "page_templates/random_results"})
   end
 end
