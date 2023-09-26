@@ -9,4 +9,10 @@ class PagesController < ApplicationController
 
     render({ :template => "page_templates/square_results"})
   end
+
+  def square_root
+  end
+
+  def square_root_results
+  end
 end
