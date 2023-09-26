@@ -42,6 +42,14 @@ class PagesController < ApplicationController
     @payment = (@numerator / @denominator).to_fs(:currency)
 
 
-    render({:template => "page_templates/payment_results"})
+    render({ :template => "page_templates/payment_results" })
+  end
+
+  def random
+    render({ :template => "page_templates/random" })
+  end
+  
+  def random_results
+    render({ :template => "page_templates/random_results"})
   end
 end
